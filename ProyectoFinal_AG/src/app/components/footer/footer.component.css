@@ -1,0 +1,11 @@
+.row {
+    background-color: black;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    border-top: 4px dotted;
+    border-bottom: 4px dotted;
+}
