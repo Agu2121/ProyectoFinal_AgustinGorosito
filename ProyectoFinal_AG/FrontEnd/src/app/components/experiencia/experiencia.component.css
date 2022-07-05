@@ -1,9 +1,11 @@
 .row {
-    padding: 20px;    
+    padding: 20px;
+    border-bottom: 5px dotted black;
+    font-family: candara;   
 }
 
 div {
-    background-color: greenyellow;
+    background-color: rgb(69, 216, 221);
 }
 
 h2 ,h3 {

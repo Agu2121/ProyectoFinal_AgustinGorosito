@@ -1,5 +1,7 @@
 .row {
-    background-color: greenyellow;
+    background-color: rgb(69, 216, 221);
     padding: 20px;
     text-align: center;
+    border-bottom: 5px dotted black; 
+    font-family: candara;
 }

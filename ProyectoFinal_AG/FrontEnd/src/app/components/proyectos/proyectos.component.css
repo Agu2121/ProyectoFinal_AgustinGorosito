@@ -1,6 +1,7 @@
 .row {
     padding: 20px;
-    background-color: greenyellow;
+    background-color: rgb(69, 216, 221);
+    font-family: candara;
 }
 
 .contenedor {
