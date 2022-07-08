@@ -24,6 +24,12 @@ img:hover {
     align-items: center;
 }
 
+.redes {
+    text-align: center;
+    display: flex;
+    margin-top: 1%;
+}
+
 .btn {
     border-width: medium;
 }
