@@ -10,4 +10,17 @@ div {
 
 h2 ,h3 {
     display: inline;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
+}
+
+p {
+    font-size: 18px;
+    border-bottom: 3px double black;
+}
+
+td {
+    padding: 20px;
+    border-bottom: 2px solid black;
 }
