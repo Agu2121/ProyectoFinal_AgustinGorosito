@@ -4,15 +4,38 @@
     font-family: candara;
 }
 
-.contenedor {
-    width: auto;
+h2 ,h3 {
+    display: inline-flex;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
 }
 
-.parte1, .parte2 {
-    display: inline-block;
-    text-align: justify;
+h1 {
+    display: inline;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+p {
+    font-size: 18px;
+    border-bottom: 3px double black;
 }
 
 .img-proyectos {
     box-shadow: 12px 12px 35px black;
+    width: 300px;
+    height: 180px;
+}
+
+td {
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.btn-dark:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
 }

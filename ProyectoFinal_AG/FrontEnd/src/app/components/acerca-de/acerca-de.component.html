@@ -1,15 +1,15 @@
 <div class="row">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/perfil.jpg" class="img-fluid" id="fotoDePerfil">
+        <img src={{persona.img}} class="img-fluid" id="fotoDePerfil">
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
-        <p>Full Stack Developer Jr</p>
+        <p>{{persona.puesto}}</p>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
-            <h1>​Acerca de mí</h1>
-            <p>Me considero una persona muy responsable, respetuosa, perfeccionista y ordenada. A la hora de trabajar en equipo siempre me pongo a disposicion de lo que haga falta, me parece fundamental llevarme bien con todos los miembros del grupo y que haya un buen ambiente de trabajo.  </p>
+            <h1>Sobre mí</h1>
+            <p>{{persona.descripcion}}  </p>
         </span>
     </div>
 </div>

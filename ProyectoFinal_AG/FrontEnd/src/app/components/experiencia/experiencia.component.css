@@ -2,9 +2,6 @@
     padding: 20px;
     border-bottom: 5px dotted black;
     font-family: candara;   
-}
-
-div {
     background-color: rgb(69, 216, 221);
 }
 
@@ -15,6 +12,14 @@ h2 ,h3 {
     background-color: white;
 }
 
+h1 {
+    display: inline;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+
 p {
     font-size: 18px;
     border-bottom: 3px double black;
@@ -23,4 +28,9 @@ p {
 td {
     padding: 20px;
     border-bottom: 2px solid black;
+}
+
+.btn-dark:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
