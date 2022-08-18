@@ -6,9 +6,9 @@
 }
 
 h2 ,h3 {
-    display: inline;
+    display: inline-flex;
     border: 1px solid black;
-    padding: 5px;
+    text-align: center;
     background-color: white;
 }
 
@@ -33,4 +33,14 @@ td {
 .btn-dark:hover{
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+.btn-dark {
+    margin-bottom: 2px;
+}
+
+.img-experiencia {
+    box-shadow: 12px 12px 35px black;
+    width: 342px;
+    height: 180px;
 }

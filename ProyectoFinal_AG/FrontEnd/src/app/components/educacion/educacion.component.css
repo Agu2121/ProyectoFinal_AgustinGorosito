@@ -8,11 +8,11 @@ div {
     background-color: rgb(69, 216, 221);
 }
 
-h2 ,h3 {
-    display: inline;
+h2 {
+    display: inline-flex;
     border: 1px solid black;
-    padding: 3px;
     background-color: white;
+    text-align: center;
 }
 
 h1 {
@@ -36,4 +36,10 @@ td {
 .btn-dark:hover{
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+.img-educacion {
+    box-shadow: 12px 12px 35px black;
+    width: 342px;
+    height: 180px;
 }

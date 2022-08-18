@@ -1,159 +1,24 @@
 <div class="row">
-    <h1>Hard y Soft Skills</h1>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="85"
-        [radius]="100"
-        [imageSrc]="'../assets/html5.png'"
-        [showImage]="true"
-        [imageHeight]="200"
-        [imageWidth]="200"
-        [outerStrokeWidth]="10"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'white'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="480"
-    ></circle-progress>
-    <p>HTML</p>
+    <h1>Habilidades</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevahab" *ngIf="isLogged">
+            Agregar Habilidad
+        </button>
     </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="80"
-        [radius]="100"
-        [imageSrc]="'../assets/css3.png'"
-        [showImage]="true"
-        [imageHeight]="200"
-        [imageWidth]="200"
-        [outerStrokeWidth]="10"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'white'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="480"
-    ></circle-progress>
-    <p>CSS</p>
+    <div class="col-lg-12" *ngFor="let Habilidades of habilidad">   
+        <h2>{{Habilidades.nombreH}} - {{Habilidades.porcentajeH}}% <img src="{{Habilidades.imagenH}}" width="50px"></h2>
+        <div class="progress">
+            <div class="progress-bar" style="width: {{Habilidades.porcentajeH}}%" role="progressbar"></div>
+      </div> 
+    <div>
     </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="65"
-        [radius]="100"
-        [imageSrc]="'../assets/js.png'"
-        [showImage]="true"
-        [imageHeight]="231"
-        [imageWidth]="231"
-        [outerStrokeWidth]="10"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'white'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="480"
-    ></circle-progress>
-    <p>JAVASCRIPT</p>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="60"
-        [radius]="100"
-        [imageSrc]="'../assets/angular.png'"
-        [showImage]="true"
-        [imageHeight]="180"
-        [imageWidth]="180"
-        [outerStrokeWidth]="10"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'white'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="480"
-    ></circle-progress>
-    <p>ANGULAR</p>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="30"
-        [radius]="100"
-        [imageSrc]="'../assets/java.png'"
-        [showImage]="true"
-        [imageHeight]="180"
-        [imageWidth]="180"
-        [outerStrokeWidth]="10"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'white'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="480"
-    ></circle-progress>
-    <p>JAVA</p>
-    </div>
-
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="35"
-        [radius]="100"
-        [imageSrc]="'../assets/spring.png'"
-        [showImage]="true"
-        [imageHeight]="215"
-        [imageWidth]="215"
-        [outerStrokeWidth]="10"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'white'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="480"
-    ></circle-progress>
-    <p>SPRING BOOT</p>
-    </div>
-    
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="55"
-        [radius]="100"
-        [imageSrc]="'../assets/mysql.png'"
-        [showImage]="true"
-        [imageHeight]="180"
-        [imageWidth]="180"
-        [outerStrokeWidth]="10"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'white'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="480"
-    ></circle-progress>
-    <p>MYSQL</p>
-    </div>
-
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="85"
-        [radius]="100"
-        [imageSrc]="'../assets/github-circle.png'"
-        [showImage]="true"
-        [imageHeight]="191"
-        [imageWidth]="191"
-        [outerStrokeWidth]="10"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'white'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="480"
-    ></circle-progress>
-    <p>GITHUB</p>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="85"
-        [radius]="100"
-        [imageSrc]="'../assets/equipo.png'"
-        [showImage]="true"
-        [imageHeight]="120"
-        [imageWidth]="120"
-        [outerStrokeWidth]="10"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'white'"
-        [innerStrokeColor]="'white'"
-        [animation]="true"
-        [animationDuration]="480"
-    ></circle-progress>
-    <p>TRABAJO EN EQUIPO</p>
-    </div>   
+      <td *ngIf="isLogged">
+        <button class="btn btn-light" routerLink="/edithab/{{Habilidades.id}}">
+            <i class="bi bi-pencil-fill"></i> Editar</button>
+    </td>
+    <td *ngIf="isLogged">
+        <button class="btn btn-danger" (click)="delete(Habilidades.id)">
+            <i class="bi bi-trash3-fill"></i> Borrar</button>
+    </td>  
+</div>
 </div>

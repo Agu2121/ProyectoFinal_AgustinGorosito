@@ -6,13 +6,18 @@
         </button>
     </div>
 
-    <div class="col lg 1"></div>
-    <div class="col-lg-11">
+    <div class="col-lg-12">
         <table class="table">
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
                     <td>
+                        <img src="{{Educacion.imgE}}" class="img-fluid img-educacion">
+                    </td>
+                    <td>
                         <h2>{{ Educacion.nombreE }}</h2>
+                    </td>
+                    <td>
+                        <p>|Inicio= <b>{{ Educacion.fechaInicioE }}</b>| - |Finalización= <b>{{ Educacion.fechaFinE }}</b>|</p>
                     </td>
                     <td>
                         <p>{{ Educacion.descripcionE }}</p>
