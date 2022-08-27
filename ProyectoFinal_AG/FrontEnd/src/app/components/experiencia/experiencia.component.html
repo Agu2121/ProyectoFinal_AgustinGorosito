@@ -11,7 +11,7 @@
             <tbody>
                 <tr *ngFor="let Experiencia of expe">
                     <td>
-                        <img src="{{Experiencia.imgE}}" class="img-fluid img-experiencia">
+                        <img src="{{Experiencia.imgE}}" class="img-experiencia">
                     </td>
                     <td>
                         <h2>{{ Experiencia.nombreE }}</h2>
@@ -24,13 +24,13 @@
                         </td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-light" routerLink="/editexp/{{ Experiencia.id }}">
-                            <i class="bi bi-pencil-fill"></i>Editar
+                            <i class="bi bi-pencil-fill"></i>
                         </button>
                     </td>
 
                     <td *ngIf="isLogged">
                         <button class="btn btn-danger" (click)="delete(Experiencia.id)">
-                            <i class="bi bi-trash3-fill"></i>Borrar</button>
+                            <i class="bi bi-trash3-fill"></i></button>
                     </td>
                 </tr>
             </tbody>

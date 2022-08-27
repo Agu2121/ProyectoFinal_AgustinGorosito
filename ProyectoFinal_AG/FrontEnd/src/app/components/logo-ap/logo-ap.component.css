@@ -35,7 +35,7 @@ img:hover {
 }
 
 /*Vista desde celulares*/
-@media (max-width: 575px) {
+@media (max-width: 1290px) {
     .container {
         flex-direction: column;
     }

@@ -18,31 +18,41 @@ h1 {
 }
 
 /*estilo de foto de perfil*/
-@media (min-width: 576px) {
-#fotoDePerfil {
-    position: absolute;
-    width: 16%;
-    border-radius: 100%;
-    box-shadow: 4px 3px 3px gray;
-    left: 1%;
-    top: 640px;
-}
-}
+@media (min-width: 1291px) {
 
-@media (max-width: 575px) {
+
     #fotoDePerfil {
         position: absolute;
-        width: 30%;
+        width: 16%;
         border-radius: 100%;
         box-shadow: 4px 3px 3px gray;
-        left: 33%;
-        top: 950px;
+        left: 1%;
+        top: 600px;
+        
     }
-}
-
-/*nombre*/
-#nombre {
-    font-weight: bold;
-    margin-top: 10%;
-    font-size: 20px;
-}
+    }
+    
+    @media (max-width: 1290px) {
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+    
+        #fotoDePerfil {
+            position: absolute;
+            width: 30%;
+            border-radius: 100%;
+            box-shadow: 4px 3px 3px gray;
+            left: 35%;
+            top: 720px;
+        }
+    }
+    
+    /*nombre*/
+    #nombre {
+        font-weight: bold;
+        margin-top: 10%;
+        font-size: 20px;
+    }

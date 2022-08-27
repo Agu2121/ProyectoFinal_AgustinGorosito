@@ -8,7 +8,9 @@ h2 ,h3 {
     display: inline-flex;
     border: 1px solid black;
     text-align: center;
-    background-color: white;
+    background: linear-gradient(rgb(69, 216, 221), white);
+    padding: 4px;
+    font-size: 40px;
 }
 
 h1 {
@@ -20,14 +22,16 @@ h1 {
 }
 
 p {
-    font-size: 18px;
-    border-bottom: 3px double black;
+    border: 1px solid black;
+    background: linear-gradient(rgb(69, 216, 221), white);
+    text-align: center;
+    font-size: 19px;
 }
 
-.img-proyectos {
+img {
     box-shadow: 12px 12px 35px black;
-    width: 300px;
-    height: 180px;
+    width: 342px;
+    height: 210px;
 }
 
 td {
@@ -38,4 +42,25 @@ td {
 .btn-dark:hover{
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+@media (max-width: 1290px) {
+    .img-proyectos {
+        width: 200px;
+        height: 200px;
+    }
+
+    .row {
+        padding: 0%;
+    }
+
+    td {
+        display: block;
+        border: 0px;
+        text-align: center;
+    }
+
+    tr {
+        border-bottom: 5px solid black;
+    }
 }
