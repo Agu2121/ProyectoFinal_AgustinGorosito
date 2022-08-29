@@ -7,10 +7,6 @@ img {
     padding-right: 12px;
 }
 
-img:hover {
-    width: 65px;
-}
-
 .texto {
     color: white;
     font-family: candara;

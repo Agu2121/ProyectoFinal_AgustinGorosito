@@ -2,7 +2,11 @@
     <div class="row">
         <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
             <div>
-                <label for="nombre">URL Foto de Perfil</label>
+                <label for="banner">URL Banner</label>
+                <input type="text" class="form-control" id="banner" name="banner" [(ngModel)]="pers.banner" required>
+            </div>
+            <div>
+                <label for="perfil">URL Foto de Perfil</label>
                 <input type="text" class="form-control" id="img" name="img" [(ngModel)]="pers.img" required>
             </div>
             <div>
