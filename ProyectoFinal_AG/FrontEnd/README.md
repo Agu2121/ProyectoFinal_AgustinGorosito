@@ -5,5 +5,5 @@ URL del portfolio: https://frontendagorosito.web.app/
 
 A continuación adjunto imagen del portfolio.
 
-![AP portfolio](https://imagizer.imageshack.com/img922/3338/ZuzEOy.png)
+![AP portfolio](https://imagizer.imageshack.com/img924/1903/0Qv8aU.png)
 
