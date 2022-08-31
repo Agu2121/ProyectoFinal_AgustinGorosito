@@ -12,6 +12,8 @@
               <td><h2>{{Proyecto.nombreP}}</h2></td>
               <td><p>{{Proyecto.descripcionP}}</p></td>
               <td><img src="{{Proyecto.imgP}}" class="img-proyectos"></td>
+              <td>
+                <a class="btn btn-success" href={{Proyecto.repoUrl}} target="_blank"><i class="bi bi-download"></i></a></td>
               <td *ngIf="isLogged">
                 <button class="btn btn-light" routerLink="/editproyecto/{{Proyecto.id}}">
                   <i class="bi bi-pencil-fill"></i></button>

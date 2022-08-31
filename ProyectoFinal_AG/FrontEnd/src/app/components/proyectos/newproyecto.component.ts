@@ -12,13 +12,14 @@ export class NewproyectoComponent implements OnInit {
   nombreP: string ='';
   descripcionP: string = '';
   imgP: string = '';
+  repoUrl: string = ''
   constructor(private proyectoService : ProyectoService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   onCreate(): void {
-    const proyecto = new Proyecto(this.nombreP, this.descripcionP, this.imgP);
+    const proyecto = new Proyecto(this.nombreP, this.descripcionP, this.imgP, this.repoUrl);
     this.proyectoService.save(proyecto).subscribe(
      data =>{
        alert("Proyecto añadido");
