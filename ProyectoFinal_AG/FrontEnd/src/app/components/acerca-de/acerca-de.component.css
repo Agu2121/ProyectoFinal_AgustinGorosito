@@ -49,6 +49,17 @@ h1 {
             top: 720px;
         }
     }
+
+    @media (min-width: 1850px) {
+        #fotoDePerfil{
+        position: absolute;
+        width: 16%;
+        border-radius: 100%;
+        box-shadow: 4px 3px 3px gray;
+        left: 1%;
+        top: 530px;
+        }
+    }
     
     /*nombre*/
     #nombre {
