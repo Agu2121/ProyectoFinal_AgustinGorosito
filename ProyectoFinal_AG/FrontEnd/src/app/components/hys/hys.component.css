@@ -1,8 +1,9 @@
 .row {
-  background-color: rgb(69, 216, 221);
   padding: 20px;
   border-bottom: 5px dotted black; 
   font-family: candara;
+  background-image: url(../../../assets/fondo.jpg);
+  background-size: cover;
 }
 
 h2{
